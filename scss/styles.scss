@@ -1,0 +1,8 @@
+//import base
+@import 'base/normalize','base/typography';
+
+//import component
+@import 'component/button','component/form','component/grid','component/navigation';
+
+//import utilities
+@import 'utilities/mixins','utilities/variables';
