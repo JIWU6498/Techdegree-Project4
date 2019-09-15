@@ -385,16 +385,6 @@ a {
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
-.btn {
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
 .default {
   background-color: #51ddfc;
 }
@@ -693,5 +683,6 @@ a {
     margin-right: initial;
   }
 }
+/* Color for button */
 
 /*# sourceMappingURL=styles.css.map */
