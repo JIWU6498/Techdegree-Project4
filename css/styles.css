@@ -383,8 +383,8 @@ a {
 }
 
 /* Color for button */
-/*Breakpoints*/
 /*Map of Theme Color*/
+/*Breakpoints*/
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
@@ -485,40 +485,17 @@ a {
 /*              Buttons                          */
 /* ============================================= */
 .default {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
   background-color: #51ddfc;
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-.error {
-  background-color: #e4757a;
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-.info {
-  background-color: #927bc1;
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
 }
 
 .success {
-  background-color: #63cc82;
   margin-top: 15px;
   width: 100%;
   color: #fff;
@@ -526,10 +503,21 @@ a {
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+  background-color: #63cc82;
+}
+
+.error {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #e4757a;
 }
 
 .warning {
-  background-color: #fd7856;
   margin-top: 15px;
   width: 100%;
   color: #fff;
@@ -537,6 +525,18 @@ a {
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+  background-color: #fd7856;
+}
+
+.info {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #927bc1;
 }
 
 /* ============================================= */

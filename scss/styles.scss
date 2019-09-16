@@ -1,11 +1,11 @@
 //import base
-@import 'base/normalize','base/typography';
+@import 'base/normalize', 'base/typography';
 
-
+//import utilities
 @import 'utilities/variables';
 
 //import component
-@import 'component/grid','component/navigation','component/button','component/form','component/images';
+@import 'component/grid', 'component/navigation', 'component/button', 'component/form', 'component/images';
 
 //import utilities
 @import 'utilities/mixins';
