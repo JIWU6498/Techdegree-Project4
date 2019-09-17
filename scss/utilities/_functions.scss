@@ -1,0 +1,4 @@
+ 
+   @function getWidth($i) {
+      @return percentage((100/12)*$i);
+   }
