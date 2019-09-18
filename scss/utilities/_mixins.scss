@@ -31,13 +31,9 @@
       margin-left: 10px;
    }
   
-   @mixin getFlexWidth($i){
-      flex-basis:getWidth($i);
-   }
-
    @for $i from 1 through 12 {
       .col-#{$i}{
-         @include getFlexWidth($i);
+         flex-basis:getFlexWidth($i);
       }
    }
 

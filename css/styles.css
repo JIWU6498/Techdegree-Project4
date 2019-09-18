@@ -386,6 +386,9 @@ a {
 /*Map of Theme Color*/
 /*Breakpoints*/
 /* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+/* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
 .container {
@@ -623,49 +626,61 @@ a {
 
   .col-1 {
     flex-basis: 833.3333333333%;
+    flex-basis: 833.3333333333%;
   }
 
   .col-2 {
+    flex-basis: 1666.6666666667%;
     flex-basis: 1666.6666666667%;
   }
 
   .col-3 {
     flex-basis: 2500%;
+    flex-basis: 2500%;
   }
 
   .col-4 {
+    flex-basis: 3333.3333333333%;
     flex-basis: 3333.3333333333%;
   }
 
   .col-5 {
     flex-basis: 4166.6666666667%;
+    flex-basis: 4166.6666666667%;
   }
 
   .col-6 {
+    flex-basis: 5000%;
     flex-basis: 5000%;
   }
 
   .col-7 {
     flex-basis: 5833.3333333333%;
+    flex-basis: 5833.3333333333%;
   }
 
   .col-8 {
+    flex-basis: 6666.6666666667%;
     flex-basis: 6666.6666666667%;
   }
 
   .col-9 {
     flex-basis: 7500%;
+    flex-basis: 7500%;
   }
 
   .col-10 {
+    flex-basis: 8333.3333333333%;
     flex-basis: 8333.3333333333%;
   }
 
   .col-11 {
     flex-basis: 9166.6666666667%;
+    flex-basis: 9166.6666666667%;
   }
 
   .col-12 {
+    flex-basis: 10000%;
     flex-basis: 10000%;
   }
 

@@ -1,4 +1,8 @@
- 
-   @function getWidth($i) {
-      @return percentage((100/12)*$i);
-   }
+/* ============================================= */
+/*                    Function                   */
+/* ============================================= */
+
+/*Calculate the width for .col- */ 
+@function getFlexWidth($i) {
+   @return 100/12*$i;
+}
