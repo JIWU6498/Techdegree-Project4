@@ -2,20 +2,21 @@
 /*              Images                           */
 /* ============================================= */
 .img {
-   @include margin-center;
-
    &-avatar {
+      @include margin-center;
       @include img-margin;
       max-height: 100%;
    }
 
    &-frame {
+      @include margin-center;
       @include img-margin;
       padding: 13px;
       border: 1px solid #ccc;
    }
 
    &-logo {
+      @include margin-center;
       @include media-query-m($break-m) {
          margin-left: initial;
          margin-right: initial;
