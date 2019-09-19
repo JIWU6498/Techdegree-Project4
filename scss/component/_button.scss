@@ -2,7 +2,7 @@
 /*              Buttons                          */
 /* ============================================= */
 
-@mixin btn {
+.btn {
   margin-top: 15px;
   width: 100%;
   color: #fff;
@@ -10,11 +10,15 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+
+  @include media-query-m($break-m) {
+    padding: 10px 30px;
+  }
 }
 
-@each $buttonStyle, $buttonColor in $color-button-map {
+@each $buttonStyle,
+$buttonColor in $color-button-map {
   .#{$buttonStyle} {
-    @include btn;
-    background-color: $buttonColor; 
+    background-color: $buttonColor;
   }
 }

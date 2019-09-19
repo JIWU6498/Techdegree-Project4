@@ -1,33 +1,32 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-//Images
-@mixin img-style {
+
+@mixin getFlexBasis($i) {
+   flex-basis: getFlexWidth($i);
+}
+
+@mixin media-query-m($break-m) {
+   @media (min-width:#{$break-m}) {
+      @content;
+   }
+}
+
+@mixin margin-center{
    display: block;
    margin-left: auto;
    margin-right: auto;
 }
 
+//Images
 @mixin img-margin {
    margin-top: 10px;
    max-width: 100%;
 }
 
-@mixin getFlexBasis($i){
-   flex-basis:getFlexWidth($i);
-}
-
-@mixin media-query-m($break-m){
-   @media (min-width:#{$break-m}){
-      @content;
-   }
-}
-
 @media (min-width: 768px) {
    .centered {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      @include margin-center;
    }
 
    [class^=col]+[class^=col] {
@@ -37,22 +36,10 @@
    @for $i from 1 through 12 {
       .col-#{$i} {
          @include getFlexBasis($i);
-      } 
-   }
-
-   /*Look at here*/
-   .btn {
-      padding: 10px 30px;
+      }
    }
 
    .btn+.btn {
       margin-left: 10px;
    }
-
-   .logo {
-      margin-left: initial;
-      margin-right: initial;
-   }
-   
 }
-

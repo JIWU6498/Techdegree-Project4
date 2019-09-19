@@ -1,19 +1,24 @@
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
-.img-avatar {
-   @include img-style;
-   @include img-margin;
-   max-height: 100%;
-}
+.img {
+   @include margin-center;
 
-.img-frame {
-   @include img-style;
-   @include img-margin;
-   padding: 13px;
-   border: 1px solid #ccc;
-}
+   &-avatar {
+      @include img-margin;
+      max-height: 100%;
+   }
 
-.img-logo {
-   @include img-style;
+   &-frame {
+      @include img-margin;
+      padding: 13px;
+      border: 1px solid #ccc;
+   }
+
+   &-logo {
+      @include media-query-m($break-m) {
+         margin-left: initial;
+         margin-right: initial;
+      }
+   }
 }

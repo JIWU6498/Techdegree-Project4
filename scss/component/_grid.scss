@@ -11,6 +11,7 @@
       margin-left: auto;
       margin-right: auto;
    }
+
 }
 
 .row {
@@ -21,6 +22,7 @@
    @include media-query-m($break-m) {
       flex-direction: row;
    }
+
 }
 
 [class^=col] {
@@ -36,10 +38,10 @@
       margin-top: 0;
       align-items: center;
    }
+   
 }
 
-@each $theme,
-$color-theme in $color-theme-map {
+@each $theme,$color-theme in $color-theme-map {
    .theme.#{$theme} {
       background-color: $color-theme;
    }

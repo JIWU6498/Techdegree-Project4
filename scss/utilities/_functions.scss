@@ -1,8 +1,4 @@
-/* ============================================= */
-/*                    Function                   */
-/* ============================================= */
-
-/*Calculate the width for .col- */ 
+// Calculate the width for .col- 
 @function getFlexWidth($i) {
    @return round(100%/12*$i);
 }

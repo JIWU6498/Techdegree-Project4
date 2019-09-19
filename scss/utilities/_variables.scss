@@ -1,4 +1,4 @@
-/* Color for button */
+// Color for button 
 $color-button-map:(
    'default':#51ddfc,
    'success':#63cc82,
@@ -7,7 +7,7 @@ $color-button-map:(
    'info': #927bc1,
 );
 
-/*Map of Theme Color*/
+//Map of Theme Color
 $color-theme-map:(
    'col-1':#927bc1,
    'col-2':#fd7856,
@@ -23,5 +23,5 @@ $color-theme-map:(
    'col-12':#80e8d1,
 );
 
-/*Breakpoints*/
+//Breakpoints
 $break-m:768px;
