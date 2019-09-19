@@ -2,6 +2,7 @@
 /*              Images                           */
 /* ============================================= */
 .img {
+
    &-avatar {
       @include margin-center;
       @include img-margin;
@@ -17,9 +18,12 @@
 
    &-logo {
       @include margin-center;
-      @include media-query-m($break-m) {
-         margin-left: initial;
-         margin-right: initial;
+      &-logo{
+         @include media-query-m($break-m) {
+            margin-left: initial;
+            margin-right: initial;
+         }
       }
    }
 }
+
