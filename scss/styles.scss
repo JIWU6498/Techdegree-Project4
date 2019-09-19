@@ -1,14 +1,12 @@
-//import base
-@import 'base/index';
-
-
 //import utilities
 @import 'utilities/index';
 
+@import 'utilities/mixins';
 
+//import base
+@import 'base/index';
 
 //import component
 @import 'component/index';
 
 
-@import 'utilities/mixins';
