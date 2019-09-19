@@ -1,12 +1,17 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-
-
-
 @mixin media-query-m($break-m) {
    @media (min-width:#{$break-m}) {
       @content;
+   }
+}
+
+@mixin getColFlexBasis{
+   @for $i from 1 through 12 {
+      .col-#{$i} {
+         flex-basis: getFlexWidth($i) !important;
+      }
    }
 }
 
@@ -22,10 +27,3 @@
    max-width: 100%;
 }
 
-@mixin getColFlexBasis{
-   @for $i from 1 through 12 {
-      .col-#{$i} {
-         flex-basis: getFlexWidth($i) !important;
-      }
-   }
-}
