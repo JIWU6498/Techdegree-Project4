@@ -38,8 +38,8 @@
       margin-top: 0;
       align-items: center;
    }
-   
 }
+
 
 @each $theme,$color-theme in $color-theme-map {
    .theme.#{$theme} {

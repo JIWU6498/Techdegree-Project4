@@ -2,9 +2,7 @@
 /*              Media Queries                    */
 /* ============================================= */
 
-@mixin getFlexBasis($i) {
-   flex-basis: getFlexWidth($i);
-}
+
 
 @mixin media-query-m($break-m) {
    @media (min-width:#{$break-m}) {
@@ -24,23 +22,10 @@
    max-width: 100%;
 }
 
-@media (min-width: 768px) {
-   .centered {
-      @include margin-center;
-   }
-
-   [class^=col]+[class^=col] {
-      margin-left: 10px;
-   }
-
+@mixin getColFlexBasis{
    @for $i from 1 through 12 {
       .col-#{$i} {
-         @include getFlexBasis($i);
+         flex-basis: getFlexWidth($i) !important;
       }
    }
-
-   .btn+.btn {
-      margin-left: 10px;
-   }
-
 }
