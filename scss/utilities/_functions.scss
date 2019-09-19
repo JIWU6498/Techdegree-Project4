@@ -3,6 +3,7 @@
 /* ============================================= */
 
 /*Calculate the width for .col- */ 
+
 @function getFlexWidth($i) {
-   @return 100/12*$i;
+   @return round(100%/12*$i);
 }
