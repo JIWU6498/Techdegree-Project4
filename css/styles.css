@@ -382,9 +382,6 @@ a {
 }
 
 /* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
-/* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
 .container {
@@ -425,7 +422,6 @@ a {
     align-items: center;
   }
 }
-
 .theme.col-1 {
   background-color: #927bc1;
 }
@@ -479,12 +475,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .col-1 {
     flex-basis: 8% !important;
   }
@@ -537,8 +527,10 @@ a {
     margin-left: 10px;
   }
 
-  .btn + .btn {
-    margin-left: 10px !important;
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* ============================================= */
@@ -590,6 +582,11 @@ a {
 @media (min-width: 768px) {
   .btn {
     padding: 10px 30px;
+  }
+}
+@media (min-width: 768px) {
+  .btn + .btn {
+    margin-left: 10px !important;
   }
 }
 

@@ -1,7 +1,6 @@
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
-
 .btn {
   margin-top: 15px;
   width: 100%;
@@ -10,8 +9,15 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+
   @include media-query-m($break-m) {
     padding: 10px 30px;
+  }
+
+  &+& {
+    @include media-query-m($break-m) {
+      margin-left: 10px !important;
+    }
   }
 }
 

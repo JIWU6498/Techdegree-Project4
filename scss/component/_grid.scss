@@ -38,10 +38,17 @@
       margin-top: 0;
       align-items: center;
    }
+
+   &+& {
+      @include media-query-m($break-m) {
+         margin-left: 10px;
+      }
+   }
 }
 
 
-@each $theme,$color-theme in $color-theme-map {
+@each $theme,
+$color-theme in $color-theme-map {
    .theme.#{$theme} {
       background-color: $color-theme;
    }
@@ -53,18 +60,9 @@
 
 
 @media (min-width: 768px) {
+   // @include getColFlexBasis;
+
    .centered {
       @include margin-center;
    }
-
-   @include getColFlexBasis;
-
-   [class^=col]+[class^=col] {
-      margin-left: 10px;
-   }
-
-   .btn+.btn {
-      margin-left: 10px !important;
-   }
-
 }

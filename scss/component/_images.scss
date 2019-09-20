@@ -18,11 +18,11 @@
 
    &-logo {
       @include margin-center;
+
       @include media-query-m($break-m) {
          margin-left: initial;
          margin-right: initial;
       }
    }
-
+   
 }
-

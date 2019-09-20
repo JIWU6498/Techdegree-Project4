@@ -1,13 +1,12 @@
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
+//mixins
 @mixin media-query-m($break-m) {
    @media (min-width:#{$break-m}) {
+      // @include getColFlexBasis;
       @content;
    }
 }
 
-@mixin getColFlexBasis{
+@mixin getColFlexBasis {
    @for $i from 1 through 12 {
       .col-#{$i} {
          flex-basis: getFlexWidth($i) !important;
@@ -26,4 +25,3 @@
    margin-top: 10px;
    max-width: 100%;
 }
-
