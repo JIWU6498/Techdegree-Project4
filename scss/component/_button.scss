@@ -24,6 +24,11 @@
 @each $buttonStyle,
 $buttonColor in $color-button-map {
   .#{$buttonStyle} {
+    transition: background-color 1s ease-in;
     background-color: $buttonColor;
+    &:hover{
+      background-color:lighten( $buttonColor, 15% );
+    }
   }
+  
 }

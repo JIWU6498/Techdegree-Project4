@@ -570,23 +570,43 @@ a {
 }
 
 .default {
+  transition: background-color 1s ease-in;
   background-color: #51ddfc;
+}
+.default:hover {
+  background-color: #9cecfd;
 }
 
 .success {
+  transition: background-color 1s ease-in;
   background-color: #63cc82;
+}
+.success:hover {
+  background-color: #9ddfb0;
 }
 
 .error {
+  transition: background-color 1s ease-in;
   background-color: #e4757a;
+}
+.error:hover {
+  background-color: #f1b5b8;
 }
 
 .warning {
+  transition: background-color 1s ease-in;
   background-color: #fd7856;
+}
+.warning:hover {
+  background-color: #feb4a2;
 }
 
 .info {
+  transition: background-color 1s ease-in;
   background-color: #927bc1;
+}
+.info:hover {
+  background-color: #bdafd9;
 }
 
 /* ============================================= */
