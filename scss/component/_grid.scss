@@ -13,18 +13,6 @@
    }
 
 }
-
-.row {
-   display: flex;
-   flex-direction: column;
-   padding: 1em 10px;
-
-   @include media-query-m($break-m) {
-      flex-direction: row;
-   }
-
-}
-
 [class^=col] {
    margin-top: 10px;
    flex-basis: 100%;
@@ -46,11 +34,29 @@
    }
 }
 
+.row {
+   display: flex;
+   flex-direction: column;
+   padding: 1em 10px;
 
-@each $theme,
-$color-theme in $color-theme-map {
-   .theme.#{$theme} {
-      background-color: $color-theme;
+   @include media-query-m($break-m) {
+      flex-direction: row;
+   }
+
+   @each $theme,
+   $color-theme in $color-theme-map {
+      .#{$theme}.theme {
+         background-color: $color-theme;
+      }
+   }
+
+   @include getColFlexBasis;
+
+   .centered {
+      @include media-query-m($break-m) {
+         @include margin-center;
+         text-align:center;
+      }
    }
 }
 
@@ -58,11 +64,3 @@ $color-theme in $color-theme-map {
    flex-basis: 100%;
 }
 
-
-@media (min-width: 768px) {
-   // @include getColFlexBasis;
-
-   .centered {
-      @include margin-center;
-   }
-}
